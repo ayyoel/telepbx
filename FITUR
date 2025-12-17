@@ -1,0 +1,80 @@
+FITUR YANG TERMASUK
+✅ Concurrent System:
+
+4 bot instances dengan load balancing
+
+Redis cluster untuk session management
+
+Database replication ready
+
+Support 50+ concurrent calls
+
+✅ Priority Queue:
+
+4 level priority (emergency, high, medium, low)
+
+AI-based priority scoring
+
+Real-time queue management
+
+Estimated wait time calculation
+
+✅ AI Features:
+
+Sentiment analysis (3 bahasa)
+
+Intent detection
+
+Emergency classification
+
+Predictive routing
+
+✅ Emergency Response:
+
+Auto emergency contact notification
+
+Conference bridge for emergencies
+
+Location tracking (jika tersedia)
+
+Multi-channel alerts
+
+✅ Donation System:
+
+Multiple payment methods
+
+Automatic receipt generation
+
+Fund allocation tracking
+
+Recurring donation support
+
+✅ Mobile App Backend:
+
+JWT authentication
+
+Real-time updates via WebSocket
+
+Profile management
+
+Call history and analytics
+
+✅ Advanced Analytics:
+
+Real-time monitoring dashboard
+
+Predictive analytics
+
+Anomaly detection
+
+Maintenance alerts
+
+✅ Smart Scheduling:
+
+Prayer time integration
+
+Auto-pause during prayers
+
+Special occasion handling
+
+Time-based routing

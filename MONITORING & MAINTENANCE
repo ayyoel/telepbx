@@ -1,0 +1,46 @@
+Auto-monitoring script:
+
+bash
+# Crontab entries untuk otomatisasi
+0 * * * * /usr/local/bin/monitor_pesantren.sh >> /var/log/pesantren_monitor.log
+0 2 * * * /usr/local/bin/backup_pesantren.sh
+0 4 * * 0 /usr/local/bin/test_pesantren_pro.sh
+Alert configuration:
+
+bash
+# Setup email alerts
+nano /etc/monit/conf.d/pesantren_pro.conf
+# Configure alerts untuk:
+# - High queue length
+# - Service downtime
+# - Emergency calls
+# - System resource usage
+7. TROUBLESHOOTING CEPAT
+Bot tidak responsive:
+
+bash
+# Cek logs
+tail -f /opt/pesantren_pro/logs/bot-*.log
+
+# Restart instances
+supervisorctl restart pesantren-bot-*
+
+# Cek Redis connection
+redis-cli -p 6379 -a PesantrenRedis2024 ping
+Database issues:
+
+bash
+# Repair database
+mysqlcheck -u pesantren_admin -pPesantrenPro2024! --auto-repair pesantren_pro
+
+# Optimize tables
+mysql -u pesantren_admin -pPesantrenPro2024! -e "OPTIMIZE TABLE call_logs, priority_queue" pesantren_pro
+Asterisk problems:
+
+bash
+# Debug Asterisk
+asterisk -rvvv
+
+# Reload configurations
+asterisk -rx "dialplan reload"
+asterisk -rx "sip reload"

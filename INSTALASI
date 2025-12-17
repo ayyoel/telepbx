@@ -1,0 +1,11 @@
+# 1. Download script
+wget -O install_pesantren_pro.sh https://raw.githubusercontent.com/example/pesantren-pro/main/install.sh
+
+# 2. Berikan permission
+chmod +x install_pesantren_pro.sh
+
+# 3. Jalankan dengan token Telegram Bot
+sudo ./install_pesantren_pro.sh "YOUR_BOT_TOKEN"
+
+# 4. Atau tanpa token (update nanti)
+sudo ./install_pesantren_pro.sh

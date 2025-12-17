@@ -1,0 +1,12 @@
+# 1. Update token Telegram
+nano /opt/pesantren_pro/bots/instance_1/bot.js
+# Ganti YOUR_BOT_TOKEN dengan token asli
+
+# 2. Restart semua services
+/root/start_pesantren_pro.sh
+
+# 3. Test sistem
+/usr/local/bin/test_pesantren_pro.sh
+
+# 4. Monitor sistem
+/usr/local/bin/monitor_pesantren.sh

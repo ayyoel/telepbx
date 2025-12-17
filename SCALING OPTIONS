@@ -1,0 +1,16 @@
+# Untuk 100+ concurrent users:
+# 1. Tambah bot instances
+INSTANCE_COUNT=8
+# Update script dan restart
+
+# 2. Scale database
+# Tambah read replicas
+# Implement database sharding
+
+# 3. Scale Redis
+# Tambah lebih banyak nodes
+# Implement Redis Sentinel
+
+# 4. Horizontal scaling
+# Tambah lebih banyak servers
+# Implement Kubernetes cluster
